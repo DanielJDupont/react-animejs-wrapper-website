@@ -1,3 +1,4 @@
+import { ExampleAnimation } from './exampleAnimation';
 import styles from './index.module.scss';
 
 export const Examples = () => {
@@ -14,6 +15,8 @@ export const Examples = () => {
           config parameter please see the documentation for Anime.js.
         </div>
       </div>
+
+      <ExampleAnimation />
     </div>
   );
 };
