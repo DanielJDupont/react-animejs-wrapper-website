@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: space-between;
+
+  .rightContainer {
+    display: flex;
+  }
+}
