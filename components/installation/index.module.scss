@@ -1,6 +1,7 @@
 .wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 
   .container {
     display: flex;
@@ -12,8 +13,12 @@
     border-radius: 5px;
 
     .titleContainer {
+      display: flex;
+
       .icon {
-        color: white;
+        color: #3276d2;
+        margin-right: 10px;
+        font-size: 26px;
       }
 
       .installation {
