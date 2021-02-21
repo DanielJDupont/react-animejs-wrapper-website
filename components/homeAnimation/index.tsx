@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
 import Anime from 'react-animejs-wrapper';
 
-export const HomePage = () => {
+export const HomeAnimation = () => {
   return (
     <div className={styles.container}>
       <div className={styles.bigAnimation}>Big Animation</div>

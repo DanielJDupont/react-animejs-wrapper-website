@@ -4,8 +4,8 @@ export const Navbar = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div>react-animejs-wrapper</div>
-        <div>View on npm</div>
+        <div className={styles.title}>react-animejs-wrapper</div>
+        <div className={styles.button}>View on npm</div>
       </div>
     </div>
   );

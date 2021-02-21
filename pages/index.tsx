@@ -1,8 +1,10 @@
 import Head from 'next/head';
-import { Examples } from '../components/examples';
 
-import { HomePage } from '../components/homepage';
+import { HomeAnimation } from '../components/homeAnimation';
+import { Installation } from '../components/installation';
 import { Navbar } from '../components/navbar';
+import { Examples } from '../components/examples';
+import { Footer } from '../components/footer/Footer';
 
 export default function Home() {
   return (
@@ -11,10 +13,11 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <Navbar />
-      <HomePage />
+      <HomeAnimation />
+      <Installation />
       <Examples />
+      <Footer />
     </div>
   );
 }

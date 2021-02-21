@@ -1,0 +1,40 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+
+    .titleContainer {
+      .icon {
+        color: white;
+      }
+
+      .installation {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+
+    .package {
+      margin-top: 10px;
+
+      .using {
+        margin: 5px 0;
+      }
+
+      .code {
+        background-color: #272c33;
+        padding: 15px;
+        border-radius: 5px;
+        color: white;
+      }
+    }
+  }
+}

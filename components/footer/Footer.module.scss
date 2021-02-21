@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #3276d2;
+  height: 100px;
+  margin-top: 200px;
+
+  .container {
+    width: 100%;
+    display: flex;
+    max-width: 1000px;
+
+    .leftColumnContainer {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      width: 100%;
+      max-width: 270px;
+
+      .leftRowContainer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        color: white;
+        width: 100%;
+      }
+    }
+  }
+}
