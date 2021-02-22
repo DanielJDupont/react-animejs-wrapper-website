@@ -1,6 +1,9 @@
 import { ExampleAnimation } from './exampleAnimation';
 import styles from './index.module.scss';
 
+import Anime, { anime } from 'react-animejs-wrapper';
+import SearchIcon from '@material-ui/icons/Search';
+
 export const Examples = () => {
   return (
     <div className={styles.wrapper}>
@@ -16,7 +19,43 @@ export const Examples = () => {
         </div>
       </div>
 
-      <ExampleAnimation />
+      <ExampleAnimation
+        title={'Sliding One Element'}
+        anime={
+          <Anime
+            style={{ position: 'absolute' }}
+            config={{
+              translateX: [0, 250],
+              scale: [0, 2],
+              loop: true,
+              duration: 2000,
+            }}
+          >
+            <SearchIcon />
+          </Anime>
+        }
+        code={'test'}
+      />
+
+      <ExampleAnimation
+        title={'Stagger Multiple Elements'}
+        anime={
+          <Anime
+            style={{ position: 'absolute' }}
+            config={{
+              translateX: [0, 250],
+              scale: [0, 2],
+              loop: true,
+              delay: anime.stagger(100, { start: 500 }),
+            }}
+          >
+            <div style={{ margin: '10px' }}>Item A</div>
+            <div style={{ margin: '10px' }}>Item B</div>
+            <div style={{ margin: '10px' }}>Item C</div>
+          </Anime>
+        }
+        code={'test'}
+      />
     </div>
   );
 };
