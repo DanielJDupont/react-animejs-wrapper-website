@@ -11,13 +11,22 @@ export const ExampleAnimation = () => {
         <div className={styles.rowContainer}>
           <div className={styles.animation}>
             <Anime
+              style={{ position: 'absolute' }}
               config={{
-                scale: [0, 1.5],
-                translateX: [0, 200],
+                translateX: [0, 250],
+                scale: [0, 2],
                 loop: true,
-                easing: 'spring(1, 80, 10, 0)',
+                duration: 2000,
               }}
             >
+              <SearchIcon />
+              <SearchIcon />
+              <SearchIcon />
+              <SearchIcon />
+              <SearchIcon />
+              <SearchIcon />
+              <SearchIcon />
+              <SearchIcon />
               <SearchIcon />
             </Anime>
           </div>
