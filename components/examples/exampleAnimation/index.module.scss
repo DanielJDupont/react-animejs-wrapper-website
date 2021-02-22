@@ -6,25 +6,40 @@
   background-color: #f0f0f0;
   padding: 40px;
 
-  .container {
+  .columnContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     max-width: 1000px;
-    flex-wrap: wrap;
 
-    .animation {
-      width: 50%;
-      min-width: 300px;
+    .title {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 45px;
+      font-size: 18px;
     }
 
-    .code {
-      background-color: #272c32;
-      width: 50%;
-      min-width: 300px;
-      color: white;
-      padding: 20px;
-      border-radius: 5px;
+    .rowContainer {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .animation {
+        width: 50%;
+        min-width: 300px;
+      }
+
+      .code {
+        background-color: #272c32;
+        width: 50%;
+        min-width: 300px;
+        color: white;
+        padding: 20px;
+        border-radius: 5px;
+      }
     }
   }
 }
