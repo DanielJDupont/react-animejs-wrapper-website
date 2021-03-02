@@ -25,10 +25,10 @@ export const Examples = () => {
           <Anime
             style={{ position: 'absolute' }}
             config={{
-              translateX: [0, 250],
-              scale: [0, 2],
+              translateX: [0, 150],
+              scale: [0, 1.3],
               loop: true,
-              duration: 2000,
+              duration: 1500,
             }}
           >
             <SearchIcon />
@@ -41,17 +41,20 @@ export const Examples = () => {
         title={'Stagger Multiple Elements'}
         anime={
           <Anime
-            style={{ position: 'absolute' }}
+            // style={{ position: 'absolute' }}
             config={{
-              translateX: [0, 250],
-              scale: [0, 2],
+              translateX: [0, 150],
+              scale: [0, 1.5],
               loop: true,
-              delay: anime.stagger(100, { start: 500 }),
+              delay: anime.stagger(100, { start: 200 }),
             }}
           >
-            <div style={{ margin: '10px' }}>Item A</div>
-            <div style={{ margin: '10px' }}>Item B</div>
-            <div style={{ margin: '10px' }}>Item C</div>
+            <div style={{ margin: '15px' }}>Mars</div>
+            <div style={{ margin: '15px' }}>Jupiter</div>
+            <div style={{ margin: '15px' }}>Satdurn</div>
+            <div style={{ margin: '15px' }}>Satdurn4</div>
+            <div style={{ margin: '15px' }}>Satdurn</div>
+            <div style={{ margin: '15px' }}>Satdurn</div>
           </Anime>
         }
         code={'test'}
