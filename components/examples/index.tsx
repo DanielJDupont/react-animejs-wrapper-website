@@ -1,8 +1,10 @@
-import { ExampleAnimation } from './exampleAnimation';
-import styles from './index.module.scss';
-
 import Anime, { anime } from 'react-animejs-wrapper';
+
+import { ExampleAnimation } from './exampleAnimation';
+
 import SearchIcon from '@material-ui/icons/Search';
+
+import styles from './index.module.scss';
 
 export const Examples = () => {
   return (
@@ -25,7 +27,7 @@ export const Examples = () => {
           <Anime
             style={{ position: 'absolute' }}
             config={{
-              translateX: [0, 150],
+              translateX: [0, 250],
               scale: [0, 1.3],
               loop: true,
               duration: 1500,
@@ -41,7 +43,11 @@ export const Examples = () => {
         title={'Stagger Multiple Elements'}
         anime={
           <Anime
-            // style={{ position: 'absolute' }}
+            style={{
+              position: 'absolute',
+              height: '0px',
+              backgroundColor: 'red',
+            }}
             config={{
               translateX: [0, 150],
               scale: [0, 1.5],
@@ -49,12 +55,9 @@ export const Examples = () => {
               delay: anime.stagger(100, { start: 200 }),
             }}
           >
-            <div style={{ margin: '15px' }}>Mars</div>
-            <div style={{ margin: '15px' }}>Jupiter</div>
-            <div style={{ margin: '15px' }}>Satdurn</div>
-            <div style={{ margin: '15px' }}>Satdurn4</div>
-            <div style={{ margin: '15px' }}>Satdurn</div>
-            <div style={{ margin: '15px' }}>Satdurn</div>
+            <div style={{ margin: '15px' }}>Transit</div>
+            <div style={{ margin: '15px' }}>Food</div>
+            <div style={{ margin: '15px' }}>Events</div>
           </Anime>
         }
         code={'test'}
