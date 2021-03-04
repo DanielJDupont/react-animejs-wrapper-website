@@ -22,14 +22,18 @@ export const Examples = () => {
       </div>
       <ExampleAnimation title={'Sliding One Element'} code={'test'}>
         <Anime
+          style={{
+            backgroundColor: 'lightgrey',
+            width: '80px',
+          }}
           config={{
-            translateX: [0, 10],
+            translateY: [0, 20],
             scale: [0.8, 1],
             loop: true,
             duration: 1500,
           }}
         >
-          <SearchIcon />
+          <div>Find</div>
         </Anime>
       </ExampleAnimation>
 
@@ -38,19 +42,32 @@ export const Examples = () => {
           style={{
             display: 'flex',
             flexDirection: 'column',
-            backgroundColor: 'red',
+            backgroundColor: 'lightgrey',
             alignItems: 'left',
+            width: '80px',
           }}
           config={{
-            translateX: [0, 0],
-            scale: [1, 1.1],
+            translateX: [-35, 0],
+            scale: [0, 1],
             loop: true,
             delay: anime.stagger(100, { start: 200 }),
           }}
         >
-          <div style={{ backgroundColor: 'blue', width: '50px' }}>Transit</div>
-          <div style={{ backgroundColor: 'blue', width: '50px' }}>Food</div>
-          <div style={{ backgroundColor: 'blue', width: '50px' }}>Events</div>
+          <div
+            style={{ backgroundColor: 'grey', width: '50px', margin: '5px' }}
+          >
+            Transit
+          </div>
+          <div
+            style={{ backgroundColor: 'grey', width: '50px', margin: '5px' }}
+          >
+            Food
+          </div>
+          <div
+            style={{ backgroundColor: 'grey', width: '50px', margin: '5px' }}
+          >
+            Events
+          </div>
         </Anime>
       </ExampleAnimation>
     </div>
