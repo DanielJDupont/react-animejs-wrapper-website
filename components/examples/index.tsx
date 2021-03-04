@@ -20,48 +20,39 @@ export const Examples = () => {
           config parameter please see the documentation for Anime.js.
         </div>
       </div>
+      <ExampleAnimation title={'Sliding One Element'} code={'test'}>
+        <Anime
+          config={{
+            translateX: [0, 10],
+            scale: [0.8, 1],
+            loop: true,
+            duration: 1500,
+          }}
+        >
+          <SearchIcon />
+        </Anime>
+      </ExampleAnimation>
 
-      <ExampleAnimation
-        title={'Sliding One Element'}
-        anime={
-          <Anime
-            style={{ position: 'absolute' }}
-            config={{
-              translateX: [0, 250],
-              scale: [0, 1.3],
-              loop: true,
-              duration: 1500,
-            }}
-          >
-            <SearchIcon />
-          </Anime>
-        }
-        code={'test'}
-      />
-
-      <ExampleAnimation
-        title={'Stagger Multiple Elements'}
-        anime={
-          <Anime
-            style={{
-              position: 'absolute',
-              height: '0px',
-              backgroundColor: 'red',
-            }}
-            config={{
-              translateX: [0, 150],
-              scale: [0, 1.5],
-              loop: true,
-              delay: anime.stagger(100, { start: 200 }),
-            }}
-          >
-            <div style={{ margin: '15px' }}>Transit</div>
-            <div style={{ margin: '15px' }}>Food</div>
-            <div style={{ margin: '15px' }}>Events</div>
-          </Anime>
-        }
-        code={'test'}
-      />
+      <ExampleAnimation title={'Stagger Multiple Elements'} code={'test'}>
+        <Anime
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: 'red',
+            alignItems: 'left',
+          }}
+          config={{
+            translateX: [0, 0],
+            scale: [1, 1.1],
+            loop: true,
+            delay: anime.stagger(100, { start: 200 }),
+          }}
+        >
+          <div style={{ backgroundColor: 'blue', width: '50px' }}>Transit</div>
+          <div style={{ backgroundColor: 'blue', width: '50px' }}>Food</div>
+          <div style={{ backgroundColor: 'blue', width: '50px' }}>Events</div>
+        </Anime>
+      </ExampleAnimation>
     </div>
   );
 };
