@@ -40,10 +40,35 @@ export const HomeAnimation = () => {
       <Anime
         className={styles.bigAnimation}
         config={{
-          translateY: [50, 0],
-          scale: [0, 1],
+          keyframes: [
+            {
+              scale: 1,
+              borderRadius: '5px',
+            },
+            {
+              translateY: 25,
+              translateX: 0,
+              scale: 0.5,
+              borderRadius: '50px',
+            },
+            {
+              translateY: 0,
+              scale: 1,
+              borderRadius: '5px',
+            },
+            {
+              width: '100px',
+              borderRadius: '50px',
+            },
+            {
+              translateX: anime.stagger('50px'),
+              rotate: '1turn',
+            },
+          ],
           loop: true,
-          delay: anime.stagger(100, { start: 200 }),
+          duration: 6000,
+          direction: 'alternate',
+          delay: anime.stagger(100),
         }}
       >
         {final}

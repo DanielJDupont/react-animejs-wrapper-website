@@ -5,9 +5,13 @@
   background-color: #3276d2;
 
   .bigAnimation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     max-width: 800px;
-    height: 404px;
+    height: 425px;
+    padding: 5px;
     background-color: rgb(206, 206, 206);
     margin-bottom: 50px;
     border-radius: 5px;
