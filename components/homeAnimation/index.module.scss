@@ -7,9 +7,17 @@
   .bigAnimation {
     width: 100%;
     max-width: 800px;
-    height: 400px;
+    height: 404px;
     background-color: rgb(206, 206, 206);
     margin-bottom: 50px;
+    border-radius: 5px;
+
+    .element {
+      padding: 19px;
+      background-color: grey;
+      border-radius: 5px;
+      margin: 2px;
+    }
   }
 
   .title {
