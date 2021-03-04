@@ -14,6 +14,7 @@ export const Footer = () => {
             <div>© Daniel Dupont</div>
           </div>
         </div>
+        <div className={styles.button}>View on npm</div>
       </div>
     </div>
   );
