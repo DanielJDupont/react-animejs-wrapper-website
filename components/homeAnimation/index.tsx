@@ -2,21 +2,24 @@ import styles from './index.module.scss';
 import Anime, { anime } from 'react-animejs-wrapper';
 
 export const HomeAnimation = () => {
-  const rainbowColorGenerator = (i: number) => {
+  const rainbowColorGenerator = (i: any) => {
+    console.log(i);
     const colorMap = {
-      0: 'black',
-      1: 'brown',
-      2: 'red',
-      3: 'orange',
-      4: 'yellow',
-      5: 'green',
-      6: 'darkgreen',
-      7: 'blue',
-      8: 'violet',
-      9: 'purple',
+      0: '#000000',
+      1: '#a52a2a',
+      2: '#f00302',
+      3: '#f5a503',
+      4: '#fdff03',
+      5: '#2b7f01',
+      6: '#206400',
+      7: '#2400ff',
+      8: '#ee82ee',
+      9: '#7f0080',
     };
 
-    return colorMap[i];
+    const index = i % Object.keys(colorMap).length;
+
+    return colorMap[index];
   };
 
   // There is some approach to generate an immutably and functionally with an array using [...] new Array(10) .keys() but I don't remember how to do it.
@@ -57,16 +60,17 @@ export const HomeAnimation = () => {
               borderRadius: '5px',
             },
             {
-              width: '100px',
+              scaleX: 0.5,
               borderRadius: '50px',
             },
             {
-              translateX: anime.stagger('50px'),
-              rotate: '1turn',
+              scaleX: 0.8,
+              scaleY: 0.5,
+              borderRadius: '5px',
             },
           ],
           loop: true,
-          duration: 6000,
+          duration: 5000,
           direction: 'alternate',
           delay: anime.stagger(100),
         }}
