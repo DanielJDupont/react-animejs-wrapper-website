@@ -1812,9 +1812,13 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-"react-animejs-wrapper@link:../../react-animejs-wrapper":
-  version "0.0.0"
-  uid ""
+react-animejs-wrapper@1.0.19:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/react-animejs-wrapper/-/react-animejs-wrapper-1.0.19.tgz#56eabe0a07376c6fc9a5040d2beec8cf58b90379"
+  integrity sha512-o+leDay95R/mks8Huh6kH6tdy9kiW6PNol7L0rE4tPVESya/MXKDjk7FxK5mM96NlL3zrWmodr42l14CJ0Ni+Q==
+  dependencies:
+    animejs "^3.2.1"
+    uuid "^8.3.2"
 
 react-dom@17.0.1:
   version "17.0.1"
