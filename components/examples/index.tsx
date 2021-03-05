@@ -21,8 +21,8 @@ export const Examples = () => {
         </SyntaxHighlighter>
 
         <div className={styles.description}>
-          For more comprehensive information on what can be passed into the
-          config parameter please see the{' '}
+          For more information on what can be passed into the config parameter
+          for Anime components please see the{' '}
           <a
             className={styles.AnimeDocumentationLink}
             href="https://animejs.com/documentation/"
