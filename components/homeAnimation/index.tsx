@@ -4,7 +4,6 @@ import styles from './index.module.scss';
 
 export const HomeAnimation = () => {
   const rainbowColorGenerator = (i: any) => {
-    console.log(i);
     const colorMap = {
       0: '#000000',
       1: '#a52a2a',

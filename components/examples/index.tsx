@@ -33,8 +33,8 @@ export const Examples = () => {
           .
         </div>
       </div>
-
       <ExampleAnimations />
+      <div className={styles.comingSoon}>More Examples Coming Soon!</div>
     </div>
   );
 };
