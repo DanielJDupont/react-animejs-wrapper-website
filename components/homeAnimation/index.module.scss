@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #3276d2;
+  min-height: 700px;
 
   .bigAnimation {
     display: flex;
@@ -27,7 +28,7 @@
   .title {
     font-size: 24px;
     font-weight: 500;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 10px;
     color: #fcfcfc;
   }
@@ -36,6 +37,6 @@
     font-size: 18px;
     font-weight: 400;
     color: #fcfcfc;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }

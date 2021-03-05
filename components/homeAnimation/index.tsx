@@ -43,45 +43,77 @@ export const HomeAnimation = () => {
       </div>
 
       <Anime
-        className={styles.bigAnimation}
+        className={styles.bigAnimationWrapper}
         config={{
           keyframes: [
+            { easing: 'spring(1, 80, 30, 0)', width: '300px' },
             {
-              scale: 1,
-              borderRadius: '5px',
-              duration: 200,
+              rotate: '+=0.25turn',
+              duration: 3000,
+              width: '300px',
+              easing: 'spring(1, 80, 30, 0)',
+            },
+            {},
+            {
+              rotate: '+=0.25turn',
+              duration: 3000,
+              width: '500px',
+              easing: 'spring(1, 80, 30, 0)',
             },
             {
-              translateY: 25,
-              translateX: 0,
-              scale: 0.5,
-              borderRadius: '50px',
-            },
-            {
-              translateY: 0,
-              scale: 1,
-              borderRadius: '5px',
-            },
-            {
-              scaleX: 0.5,
-              borderRadius: '50px',
-            },
-            {
-              scaleX: 0.8,
-              scaleY: 0.5,
-              borderRadius: '5px',
-              duration: 500,
+              rotate: '+=0.25turn',
+              duration: 3000,
+              width: '300px',
+              height: '500px',
+              easing: 'spring(1, 80, 30, 0)',
             },
           ],
-          duration: 4000,
-
-          delay: anime.stagger(100, { start: 50 }),
-          endDelay: 0,
           loop: true,
           direction: 'alternate',
+          duration: 4000,
         }}
       >
-        {final}
+        <Anime
+          className={styles.bigAnimation}
+          config={{
+            keyframes: [
+              {
+                scale: 1,
+                borderRadius: '5px',
+                duration: 200,
+              },
+              {
+                translateY: 25,
+                translateX: 0,
+                scale: 0.5,
+                borderRadius: '50px',
+              },
+              {
+                translateY: 0,
+                scale: 1,
+                borderRadius: '5px',
+              },
+              {
+                scaleX: 0.5,
+                borderRadius: '50px',
+              },
+              {
+                scaleX: 0.8,
+                scaleY: 0.5,
+                borderRadius: '5px',
+                duration: 500,
+              },
+            ],
+            duration: 4000,
+
+            delay: anime.stagger(100, { start: 50 }),
+            endDelay: 0,
+            loop: true,
+            direction: 'alternate',
+          }}
+        >
+          {final}
+        </Anime>
       </Anime>
     </div>
   );
