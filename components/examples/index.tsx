@@ -1,7 +1,6 @@
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
-import { SlidingOneElementExample } from './exampleAnimation/SlidingOneElementExample';
-import { StaggerMultipleElementsExample } from './exampleAnimation/StaggerMultipleElementsExample';
+import { ExampleAnimations } from './exampleAnimations';
 import dark from './codeStyling';
 
 import styles from './index.module.scss';
@@ -27,8 +26,7 @@ export const Examples = () => {
         </div>
       </div>
 
-      <SlidingOneElementExample />
-      <StaggerMultipleElementsExample />
+      <ExampleAnimations />
     </div>
   );
 };
