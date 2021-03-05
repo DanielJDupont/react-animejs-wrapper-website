@@ -38,9 +38,10 @@
 .code {
   background-color: #272c32;
   width: 50%;
-
   min-width: 300px;
   color: white;
   padding: 20px;
   border-radius: 5px;
+  overflow-y: auto;
+  max-height: 300px;
 }
