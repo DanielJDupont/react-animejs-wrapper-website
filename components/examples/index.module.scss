@@ -29,6 +29,15 @@
     .description {
       margin-top: 5px;
       line-height: 24px;
+
+      .AnimeDocumentationLink {
+        color: rgb(0, 0, 194);
+        transition-duration: 1000ms;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 }

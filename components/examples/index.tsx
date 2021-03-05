@@ -22,7 +22,15 @@ export const Examples = () => {
 
         <div className={styles.description}>
           For more comprehensive information on what can be passed into the
-          config parameter please see the documentation for Anime.js.
+          config parameter please see the{' '}
+          <a
+            className={styles.AnimeDocumentationLink}
+            href="https://animejs.com/documentation/"
+            target="_blank"
+          >
+            documentation for Anime.js
+          </a>
+          .
         </div>
       </div>
 
