@@ -6,9 +6,9 @@ export const Installation = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.titleContainer}>
+        <div className={styles.title}>
           <GetAppIcon className={styles.icon} />
-          <div className={styles.installation}>Installation</div>
+          Installation
         </div>
 
         <div className={styles.package}>

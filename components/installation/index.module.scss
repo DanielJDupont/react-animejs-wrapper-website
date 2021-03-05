@@ -12,18 +12,16 @@
     padding: 20px;
     border-radius: 5px;
 
-    .titleContainer {
+    .title {
       display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 22px;
 
       .icon {
         color: #3276d2;
         margin-right: 10px;
         font-size: 26px;
-      }
-
-      .installation {
-        font-size: 20px;
-        font-weight: 500;
       }
     }
 
