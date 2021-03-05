@@ -11,15 +11,13 @@ export const Examples = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.title}>Sample Components</div>
+        <div className={styles.title}>Imports</div>
         <div className={styles.importDescription}>
           You'll want this at the top of your file:
         </div>
-
         <SyntaxHighlighter className={styles.code} language="jsx" style={dark}>
           {importExample}
         </SyntaxHighlighter>
-
         <div className={styles.description}>
           For more information on what can be passed into the config parameter
           for Anime components please see the{' '}
@@ -33,6 +31,9 @@ export const Examples = () => {
           .
         </div>
       </div>
+
+      <div className={styles.sampleComponents}>Sample Components</div>
+
       <ExampleAnimations />
       <div className={styles.comingSoon}>More Examples Coming Soon!</div>
     </div>
