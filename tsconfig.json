@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/examples/exampleAnimation/codeStyling.js"  ],
+, "components/examples/codeStyling.js"  ],
   "exclude": [
     "node_modules"
   ]
