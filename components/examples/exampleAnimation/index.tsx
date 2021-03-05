@@ -1,7 +1,6 @@
-import Anime from 'react-animejs-wrapper';
-import SearchIcon from '@material-ui/icons/Search';
-
 import styles from './index.module.scss';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import dark from './codeStyling';
 
 export const ExampleAnimation: React.FC<{
   title: string;
@@ -13,7 +12,13 @@ export const ExampleAnimation: React.FC<{
         <div className={styles.title}>{title}</div>
         <div className={styles.rowContainer}>
           <div className={styles.animation}>{children}</div>
-          <div className={styles.code}>{code}</div>
+          <SyntaxHighlighter
+            className={styles.code}
+            language="jsx"
+            style={dark}
+          >
+            {code}
+          </SyntaxHighlighter>
         </div>
       </div>
     </div>

@@ -6,6 +6,74 @@ import SearchIcon from '@material-ui/icons/Search';
 
 import styles from './index.module.scss';
 
+const slidingOneElementExampleCode = `<Anime
+  style={{
+    backgroundColor: 'lightgrey',
+    width: '125px',
+    padding: '5px',
+    borderRadius: '5px',
+  }}
+  config={{
+    translateY: [0, 25],
+    scale: [0.8, 1],
+    loop: true,
+    duration: 1500,
+    easing: 'spring(1, 100, 12, 0)',
+  }}
+>
+  <div>Search</div>
+</Anime>
+`;
+
+const staggerMultipleElementsExampleCode = `<Anime
+  style={{
+    display: 'flex',
+    flexDirection: 'column',
+    backgroundColor: 'lightgrey',
+    alignItems: 'left',
+    width: '160px',
+  }}
+  config={{
+    translateX: [-35, 0],
+    scale: [0, 1],
+    loop: true,
+    delay: anime.stagger(100, { start: 200 }),
+    easing: 'spring(1, 80, 13, 0)',
+  }}
+>
+  <div
+    style={{
+      backgroundColor: '#f1f1f1',
+      width: '150px',
+      margin: '5px',
+      padding: '5px',
+    }}
+  >
+    Transit
+  </div>
+  <div
+    style={{
+      backgroundColor: '#f1f1f1',
+      width: '150px',
+      margin: '5px',
+      padding: '5px',
+    }}
+  >
+    Food
+  </div>
+  <div
+    style={{
+      backgroundColor: '#f1f1f1',
+      width: '150px',
+      margin: '5px',
+      padding: '5px',
+    }}
+  >
+    Events
+  </div>
+</Anime>
+`;
+
 export const Examples = () => {
   return (
     <div className={styles.wrapper}>
@@ -20,51 +88,76 @@ export const Examples = () => {
           config parameter please see the documentation for Anime.js.
         </div>
       </div>
-      <ExampleAnimation title={'Sliding One Element'} code={'test'}>
+      <ExampleAnimation
+        code={slidingOneElementExampleCode}
+        title={'Sliding One Element'}
+      >
         <Anime
           style={{
             backgroundColor: 'lightgrey',
-            width: '80px',
+            width: '125px',
+            padding: '5px',
+            borderRadius: '5px',
           }}
           config={{
-            translateY: [0, 20],
+            translateY: [0, 25],
             scale: [0.8, 1],
             loop: true,
             duration: 1500,
+            easing: 'spring(1, 100, 12, 0)',
           }}
         >
-          <div>Find</div>
+          <div>Search</div>
         </Anime>
       </ExampleAnimation>
 
-      <ExampleAnimation title={'Stagger Multiple Elements'} code={'test'}>
+      <ExampleAnimation
+        code={staggerMultipleElementsExampleCode}
+        title={'Stagger Multiple Elements'}
+      >
         <Anime
           style={{
             display: 'flex',
             flexDirection: 'column',
             backgroundColor: 'lightgrey',
             alignItems: 'left',
-            width: '80px',
+            width: '160px',
           }}
           config={{
             translateX: [-35, 0],
             scale: [0, 1],
             loop: true,
             delay: anime.stagger(100, { start: 200 }),
+            easing: 'spring(1, 80, 13, 0)',
           }}
         >
           <div
-            style={{ backgroundColor: 'grey', width: '50px', margin: '5px' }}
+            style={{
+              backgroundColor: '#f1f1f1',
+              width: '150px',
+              margin: '5px',
+              padding: '5px',
+            }}
           >
             Transit
           </div>
           <div
-            style={{ backgroundColor: 'grey', width: '50px', margin: '5px' }}
+            style={{
+              backgroundColor: '#f1f1f1',
+              width: '150px',
+              margin: '5px',
+              padding: '5px',
+            }}
           >
             Food
           </div>
           <div
-            style={{ backgroundColor: 'grey', width: '50px', margin: '5px' }}
+            style={{
+              backgroundColor: '#f1f1f1',
+              width: '150px',
+              margin: '5px',
+              padding: '5px',
+            }}
           >
             Events
           </div>

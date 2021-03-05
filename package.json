@@ -14,6 +14,7 @@
     "react": "17.0.1",
     "react-animejs-wrapper": "link:/home/dan/Desktop/react-animejs-wrapper",
     "react-dom": "17.0.1",
+    "react-syntax-highlighter": "^15.4.3",
     "sass": "^1.32.8"
   },
   "devDependencies": {
