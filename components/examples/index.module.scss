@@ -12,8 +12,16 @@
     background-color: #f0f0f0;
 
     .title {
+      display: flex;
+      align-items: center;
       font-size: 24px;
       font-weight: 500;
+
+      .icon {
+        color: #3276d2;
+        margin-right: 10px;
+        font-size: 26px;
+      }
     }
 
     .importDescription {
@@ -44,9 +52,17 @@
   }
 
   .sampleComponents {
+    display: flex;
+    align-items: center;
     font-size: 28px;
     font-weight: 500;
     margin-top: 100px;
+
+    .icon {
+      color: #3276d2;
+      margin-right: 10px;
+      font-size: 28px;
+    }
   }
 }
 
