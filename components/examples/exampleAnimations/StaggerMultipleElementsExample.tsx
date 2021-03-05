@@ -9,6 +9,7 @@ const staggerMultipleElementsExampleCode = `<Anime
     backgroundColor: 'lightgrey',
     alignItems: 'left',
     width: '160px',
+    height: '115px',
   }}
   config={{
     translateX: [-35, 0],
@@ -64,6 +65,7 @@ export const StaggerMultipleElementsExample = () => {
           backgroundColor: 'lightgrey',
           alignItems: 'left',
           width: '160px',
+          height: '115px',
         }}
         config={{
           translateX: [-35, 0],

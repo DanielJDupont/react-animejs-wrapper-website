@@ -6,6 +6,7 @@ const slidingOneElementExampleCode = `<Anime
   style={{
     backgroundColor: 'lightgrey',
     width: '125px',
+    height: '28px',
     padding: '5px',
     borderRadius: '5px',
   }}
@@ -31,6 +32,7 @@ export const SlidingOneElementExample = () => {
         style={{
           backgroundColor: 'lightgrey',
           width: '125px',
+          height: '28px',
           padding: '5px',
           borderRadius: '5px',
         }}

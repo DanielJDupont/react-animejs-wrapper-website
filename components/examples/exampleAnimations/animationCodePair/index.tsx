@@ -11,9 +11,9 @@ export const AnimationCodePair: React.FC<{
       <div className={styles.columnContainer}>
         <div className={styles.title}>{title}</div>
         <div className={styles.rowContainer}>
-          <div className={styles.animation}>{children}</div>
+          <div className={styles.animationContainer}>{children}</div>
           <SyntaxHighlighter
-            className={styles.code}
+            className={styles.codeContainer}
             language="jsx"
             style={dark}
           >
