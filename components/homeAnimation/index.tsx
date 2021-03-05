@@ -47,6 +47,7 @@ export const HomeAnimation = () => {
             {
               scale: 1,
               borderRadius: '5px',
+              duration: 200,
             },
             {
               translateY: 25,
@@ -67,12 +68,14 @@ export const HomeAnimation = () => {
               scaleX: 0.8,
               scaleY: 0.5,
               borderRadius: '5px',
+              duration: 500,
             },
           ],
           loop: true,
-          duration: 5000,
+          duration: 4000,
           direction: 'alternate',
-          delay: anime.stagger(100),
+          delay: anime.stagger(100, { start: 50 }),
+          endDelay: 0,
         }}
       >
         {final}
