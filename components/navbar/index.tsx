@@ -5,7 +5,13 @@ export const Navbar = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.title}>react-animejs-wrapper</div>
-        <div className={styles.button}>View on npm</div>
+        <a
+          href="https://www.npmjs.com/package/react-animejs-wrapper"
+          target="_blank"
+          className={styles.button}
+        >
+          View on npm
+        </a>
       </div>
     </div>
   );

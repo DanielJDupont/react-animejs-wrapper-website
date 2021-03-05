@@ -14,7 +14,13 @@ export const Footer = () => {
             <div>© Daniel Dupont</div>
           </div>
         </div>
-        <div className={styles.button}>View on npm</div>
+        <a
+          href="https://www.npmjs.com/package/react-animejs-wrapper"
+          target="_blank"
+          className={styles.button}
+        >
+          View on npm
+        </a>
       </div>
     </div>
   );
