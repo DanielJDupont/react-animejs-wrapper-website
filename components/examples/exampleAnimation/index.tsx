@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import dark from './codeStyling';
+import dark from '../codeStyling';
 
 export const ExampleAnimation: React.FC<{
   title: string;

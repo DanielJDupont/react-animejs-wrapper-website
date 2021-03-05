@@ -1,10 +1,12 @@
 import Anime, { anime } from 'react-animejs-wrapper';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 import { ExampleAnimation } from './exampleAnimation';
-
-import SearchIcon from '@material-ui/icons/Search';
+import dark from './codeStyling';
 
 import styles from './index.module.scss';
+
+const importExample = `import Anime, { anime } from 'react-animejs-wrapper';`;
 
 const slidingOneElementExampleCode = `<Anime
   style={{
@@ -79,10 +81,14 @@ export const Examples = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.title}>Sample Components</div>
-        <div className={styles.description}>
-          Get to using Anime.js as quickly as possible in your React
-          application.
+        <div className={styles.importDescription}>
+          You'll want this at the top of your file:
         </div>
+
+        <SyntaxHighlighter className={styles.code} language="jsx" style={dark}>
+          {importExample}
+        </SyntaxHighlighter>
+
         <div className={styles.description}>
           For more comprehensive information on what can be passed into the
           config parameter please see the documentation for Anime.js.
